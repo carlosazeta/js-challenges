@@ -11,3 +11,7 @@ Example output: "HELLO!"
 Example input: "I'm almost out of coffee"
 Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
 */
+
+export default function panic(str) {
+	// write your code here
+}
