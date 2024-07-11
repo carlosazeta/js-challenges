@@ -7,6 +7,11 @@ import {
 	toTitleCase,
 } from './challenges/04-toTitleCase/toTitleCase_function.js'
 
+import {
+	emojifyWord,
+	emojifyPhrase,
+} from './challenges/05-emojify/emojify_function.js'
+
 /*
 --- TESTS ---
 To check your results, uncomment the lines corresponding to the challenge.
@@ -30,7 +35,16 @@ To check your results, uncomment the lines corresponding to the challenge.
 // console.log(altCaps('When you visit Portland you have to go to VooDoo Donuts'))
 
 /*
-      -----   03 - toTitleCase    -----
+      -----   04 - toTitleCase    -----
 */
 // console.log(capitalizeWord('pumpkin'))
 // console.log(toTitleCase('pumpkin pranced purposefully across the pond'))
+
+/*
+      -----   05 - Emojify    -----
+*/
+// console.log(emojifyWord(':heart:'))
+// console.log(emojifyWord(':flower:'))
+// console.log(emojifyWord('elephant'))
+// console.log(emojifyPhrase('I :heart: my :cat:'))
+// console.log(emojifyPhrase('I :heart: my :elephant:'))
