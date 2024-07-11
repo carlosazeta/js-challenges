@@ -2,6 +2,11 @@ import './style.css'
 import panic from './challenges/01-panic/panic_function.js'
 import whisper from './challenges/02-whisper/whisper_function.js'
 import altCaps from './challenges/03-altCaps/altCaps_function.js'
+import {
+	capitalizeWord,
+	toTitleCase,
+} from './challenges/04-toTitleCase/toTitleCase_function.js'
+
 /*
 --- TESTS ---
 To check your results, uncomment the lines corresponding to the challenge.
@@ -23,3 +28,9 @@ To check your results, uncomment the lines corresponding to the challenge.
       -----   03 - altCaps    -----
 */
 // console.log(altCaps('When you visit Portland you have to go to VooDoo Donuts'))
+
+/*
+      -----   03 - toTitleCase    -----
+*/
+// console.log(capitalizeWord('pumpkin'))
+// console.log(toTitleCase('pumpkin pranced purposefully across the pond'))
