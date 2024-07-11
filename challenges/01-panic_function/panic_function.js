@@ -13,5 +13,5 @@ Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
 */
 
 export default function panic(str) {
-	// write your code here
+	// Your code goes here
 }
