@@ -6,11 +6,11 @@ import {
 	capitalizeWord,
 	toTitleCase,
 } from './challenges/04-toTitleCase/toTitleCase_function.js'
-
 import {
 	emojifyWord,
 	emojifyPhrase,
 } from './challenges/05-emojify/emojify_function.js'
+import isAnagram from './challenges/06-anagram/anagram_function.js'
 
 /*
 --- TESTS ---
@@ -48,3 +48,9 @@ To check your results, uncomment the lines corresponding to the challenge.
 // console.log(emojifyWord('elephant'))
 // console.log(emojifyPhrase('I :heart: my :cat:'))
 // console.log(emojifyPhrase('I :heart: my :elephant:'))
+
+/*
+      -----   06 - Anagram    -----
+*/
+// console.log(isAnagram('allergy', 'gallery'))
+// console.log(isAnagram('treasure', 'measure'))
