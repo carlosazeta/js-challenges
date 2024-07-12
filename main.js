@@ -15,6 +15,7 @@ import {
 	reverseString,
 	reverseStringsInArray,
 } from './challenges/07-reverseMessage/reverseMessage_function.js'
+import isPalindrome from './challenges/08-palindromes/palindromes_function.js'
 
 /*
 --- TESTS ---
@@ -71,3 +72,12 @@ To check your results, uncomment the lines corresponding to the challenge.
 // ]
 // console.log(reverseString(title))
 // console.log(reverseStringsInArray(messages))
+
+/*
+      -----   08 - Palindromes    -----
+*/
+// console.log(isPalindrome('abba'))
+// console.log(isPalindrome('civic'))
+// console.log(isPalindrome('octopus'))
+// console.log(isPalindrome('pumpkins'))
+// console.log(isPalindrome('madam'))
