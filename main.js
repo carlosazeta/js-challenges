@@ -17,9 +17,10 @@ import {
 } from './challenges/07-reverseMessage/reverseMessage_function.js'
 import isPalindrome from './challenges/08-palindromes/palindromes_function.js'
 import removeDupeChars from './challenges/09-removeDupesChars/removeDupesChars_function.js'
+import countChars from './challenges/10-countChars/countChars_function.js'
 
 /*
---- TESTS ---
+      -----   TESTS    -----
 To check your results, uncomment the lines corresponding to the challenge.
 */
 
@@ -88,3 +89,8 @@ To check your results, uncomment the lines corresponding to the challenge.
 */
 // const password = '9338dsabbbadjdjdj2sdfdfdf282ff8fdsd888ss8cfgfg332q23'
 // console.log(removeDupeChars(password))
+
+/*
+      -----   10 - Count chars    -----
+*/
+// console.log(countChars('Peggy Porth'))
