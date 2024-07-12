@@ -16,6 +16,7 @@ import {
 	reverseStringsInArray,
 } from './challenges/07-reverseMessage/reverseMessage_function.js'
 import isPalindrome from './challenges/08-palindromes/palindromes_function.js'
+import removeDupeChars from './challenges/09-removeDupesChars/removeDupesChars_function.js'
 
 /*
 --- TESTS ---
@@ -81,3 +82,9 @@ To check your results, uncomment the lines corresponding to the challenge.
 // console.log(isPalindrome('octopus'))
 // console.log(isPalindrome('pumpkins'))
 // console.log(isPalindrome('madam'))
+
+/*
+      -----   09 - Remove Dupes Chars    -----
+*/
+// const password = '9338dsabbbadjdjdj2sdfdfdf282ff8fdsd888ss8cfgfg332q23'
+// console.log(removeDupeChars(password))
