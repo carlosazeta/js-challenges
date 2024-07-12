@@ -11,6 +11,10 @@ import {
 	emojifyPhrase,
 } from './challenges/05-emojify/emojify_function.js'
 import isAnagram from './challenges/06-anagram/anagram_function.js'
+import {
+	reverseString,
+	reverseStringsInArray,
+} from './challenges/07-reverseMessage/reverseMessage_function.js'
 
 /*
 --- TESTS ---
@@ -54,3 +58,16 @@ To check your results, uncomment the lines corresponding to the challenge.
 */
 // console.log(isAnagram('allergy', 'gallery'))
 // console.log(isAnagram('treasure', 'measure'))
+
+/*
+      -----   07 - Reverse Message    -----
+*/
+// const title = ':htraE no od ot ffutS'
+// const messages = [
+// 	'maerc eci yrT',
+// 	'rewoT leffiE tisiV',
+// 	'noom eht ot snamuh etacoleR',
+// 	'egrahc ni stac tuP',
+// ]
+// console.log(reverseString(title))
+// console.log(reverseStringsInArray(messages))
