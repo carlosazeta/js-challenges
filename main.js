@@ -18,6 +18,7 @@ import {
 import isPalindrome from './challenges/08-palindromes/palindromes_function.js'
 import removeDupeChars from './challenges/09-removeDupesChars/removeDupesChars_function.js'
 import countChars from './challenges/10-countChars/countChars_function.js'
+import removeDupesFromArray from './challenges/11-removeDupesArray/removeDupesArray_function.js'
 
 /*
       -----   TESTS    -----
@@ -94,3 +95,21 @@ To check your results, uncomment the lines corresponding to the challenge.
       -----   10 - Count chars    -----
 */
 // console.log(countChars('Peggy Porth'))
+
+/*
+      -----   11 - Remove Dupes Array    -----
+*/
+// const eggScrambleRecipe = [
+// 	'🥓 bacon',
+// 	'🥓 bacon',
+// 	'🍳 eggs',
+// 	'🫑 green peppers',
+// 	'🧀 cheese',
+// 	'🌶️ hot sauce',
+// 	'🥓 bacon',
+// 	'🥦 broccoli',
+// 	'🧀 cheese',
+// 	'🥦 broccoli',
+// 	'🌶️ hot sauce',
+// ]
+// console.log(removeDupesFromArray(eggScrambleRecipe))
