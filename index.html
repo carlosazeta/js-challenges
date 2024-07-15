@@ -1,13 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Vite App</title>
+	</head>
+	<body>
+		<div id="app">
+			<h1>JavaScript Challenges</h1>
+			<select id="challenge-select">
+				<option value="">Select a challenge</option>
+				<option value="panic">01 - Panic</option>
+				<option value="whisper">02 - Whisper</option>
+				<option value="altCaps">03 - Alt Caps</option>
+				<option value="toTitleCase">04 - To Title Case</option>
+				<option value="emojify">05 - Emojify</option>
+				<option value="anagram">06 - Anagram</option>
+				<option value="reverseMessage">07 - Reverse Message</option>
+				<option value="palindromes">08 - Palindromes</option>
+				<option value="removeDupeChars">09 - Remove Dupe Chars</option>
+				<option value="countChars">10 - Count Chars</option>
+				<option value="removeDupesArray">11 - Remove Dupes Array</option>
+			</select>
+			<button id="run-challenge">Run Challenge</button>
+			<div id="result"></div>
+		</div>
+		<script src="/main.js" type="module"></script>
+	</body>
 </html>

@@ -13,5 +13,5 @@ Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
 */
 
 export default function panic(str) {
-	// Your code goes here
+	return `${str.split(' ').join(' 😱 ').toUpperCase()}!`
 }
