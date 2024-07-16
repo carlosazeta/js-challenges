@@ -150,7 +150,7 @@ challengeSelect.addEventListener('change', (event) => {
 runButton.addEventListener('click', () => {
 	const selectedChallenge = challengeSelect.value
 	if (selectedChallenge && challenges[selectedChallenge]) {
-		resultDiv.innerHTML = '' // Limpiar resultados anteriores
+		resultDiv.innerHTML = ''
 		challenges[selectedChallenge]()
 		localStorage.setItem('lastSelectedChallenge', selectedChallenge)
 	} else {
