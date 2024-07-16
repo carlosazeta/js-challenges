@@ -20,14 +20,14 @@ This project is a collection of JavaScript coding challenges designed to improve
 
 ### Installation
 
-1. Clone the repository: git clone https://github.com/yourusername/js-coding-challenges.git
-2. Navigate to the project directory: cd js-coding-challenges
+1. Clone the repository: `git clone https://github.com/carlosazeta/js-challenges`
+2. Navigate to the project directory: `cd js-coding-challenges`
 3. Install dependencies: npm install
 
 ### Running the Project
 
 1. Start the development server: npm run dev
-2. Open your browser and navigate to `http://localhost:3000` (or the port specified by your dev server)
+2. Open your browser and navigate to `http://localhost:5173` (or the port specified by your dev server)
 
 ## Usage
 
@@ -54,9 +54,9 @@ Contributions are welcome! Here's how you can contribute:
 
 ## Contact
 
-Your Name - [@carlosazeta](https://twitter.com/carlosazeta) - azetadev@gmail.com
+Twitter/x - [@carlosazeta](https://twitter.com/carlosazeta)
 
-Project Link: [https://github.com/yourusername/js-coding-challenges](https://github.com/yourusername/js-coding-challenges)
+Project Link: [https://github.com/carlosazeta/js-challenges](https://github.com/carlosazeta/js-challenges)
 
 ## Acknowledgments
 
