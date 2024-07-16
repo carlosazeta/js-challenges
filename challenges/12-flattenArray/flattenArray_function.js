@@ -33,5 +33,5 @@ const kittyPrizes = [
 ]
 
 export default function flattenArray(arr) {
-	return arr.flat()
+	return
 }
