@@ -19,6 +19,7 @@ import isPalindrome from './challenges/08-palindromes/palindromes_function.js'
 import removeDupeChars from './challenges/09-removeDupesChars/removeDupesChars_function.js'
 import countChars from './challenges/10-countChars/countChars_function.js'
 import removeDupesFromArray from './challenges/11-removeDupesArray/removeDupesArray_function.js'
+import flattenArray from './challenges/12-flattenArray/flattenArray_function.js'
 
 const challengeSelect = document.getElementById('challenge-select')
 const runButton = document.getElementById('run-challenge')
@@ -26,32 +27,32 @@ const resultDiv = document.getElementById('result')
 
 const challenges = {
 	panic: () => {
-		console.log(panic("I'm almost out of coffee"))
-		console.log(panic('winter is coming'))
+		logResult(panic("I'm almost out of coffee"))
+		logResult(panic('winter is coming'))
 	},
 	whisper: () => {
-		console.log(whisper('PLEASE STOP SHOUTING.'))
-		console.log(whisper("MA'AM, this is a Wendy's!"))
+		logResult(whisper('PLEASE STOP SHOUTING.'))
+		logResult(whisper("MA'AM, this is a Wendy's!"))
 	},
 	altCaps: () => {
-		console.log(
+		logResult(
 			altCaps('When you visit Portland you have to go to VooDoo Donuts')
 		)
 	},
 	toTitleCase: () => {
-		console.log(capitalizeWord('pumpkin'))
-		console.log(toTitleCase('pumpkin pranced purposefully across the pond'))
+		logResult(capitalizeWord('pumpkin'))
+		logResult(toTitleCase('pumpkin pranced purposefully across the pond'))
 	},
 	emojify: () => {
-		console.log(emojifyWord(':heart:'))
-		console.log(emojifyWord(':flower:'))
-		console.log(emojifyWord('elephant'))
-		console.log(emojifyPhrase('I :heart: my :cat:'))
-		console.log(emojifyPhrase('I :heart: my :elephant:'))
+		logResult(emojifyWord(':heart:'))
+		logResult(emojifyWord(':flower:'))
+		logResult(emojifyWord('elephant'))
+		logResult(emojifyPhrase('I :heart: my :cat:'))
+		logResult(emojifyPhrase('I :heart: my :elephant:'))
 	},
 	anagram: () => {
-		console.log(isAnagram('allergy', 'gallery'))
-		console.log(isAnagram('treasure', 'measure'))
+		logResult(isAnagram('allergy', 'gallery'))
+		logResult(isAnagram('treasure', 'measure'))
 	},
 	reverseMessage: () => {
 		const title = ':htraE no od ot ffutS'
@@ -61,22 +62,22 @@ const challenges = {
 			'noom eht ot snamuh etacoleR',
 			'egrahc ni stac tuP',
 		]
-		console.log(reverseString(title))
-		console.log(reverseStringsInArray(messages))
+		logResult(reverseString(title))
+		logResult(reverseStringsInArray(messages))
 	},
 	palindromes: () => {
-		console.log(isPalindrome('abba'))
-		console.log(isPalindrome('civic'))
-		console.log(isPalindrome('octopus'))
-		console.log(isPalindrome('pumpkins'))
-		console.log(isPalindrome('madam'))
+		logResult(isPalindrome('abba'))
+		logResult(isPalindrome('civic'))
+		logResult(isPalindrome('octopus'))
+		logResult(isPalindrome('pumpkins'))
+		logResult(isPalindrome('madam'))
 	},
 	removeDupeChars: () => {
 		const password = '9338dsabbbadjdjdj2sdfdfdf282ff8fdsd888ss8cfgfg332q23'
-		console.log(removeDupeChars(password))
+		logResult(removeDupeChars(password))
 	},
 	countChars: () => {
-		console.log(countChars('Peggy Porth'))
+		logResult(countChars('Peggy Porth'))
 	},
 	removeDupesArray: () => {
 		const eggScrambleRecipe = [
@@ -92,16 +93,52 @@ const challenges = {
 			'🥦 broccoli',
 			'🌶️ hot sauce',
 		]
-		console.log(removeDupesFromArray(eggScrambleRecipe))
+		logResult(removeDupesFromArray(eggScrambleRecipe))
 	},
+	flattenArray: () => {
+		const kittyScores = [
+			[39, 99, 76],
+			89,
+			98,
+			[87, 56, 90],
+			[96, 95],
+			40,
+			78,
+			50,
+			[63],
+		]
+
+		const kittyPrizes = [
+			['💰', '🐟', '🐟'],
+			'🏆',
+			'💐',
+			'💵',
+			['💵', '🏆'],
+			['🐟', '💐', '💐'],
+			'💵',
+			'💵',
+			['🐟'],
+			'🐟',
+		]
+
+		logResult(flattenArray(kittyPrizes))
+		logResult(flattenArray(kittyScores))
+	},
+}
+
+function logResult(result) {
+	if (Array.isArray(result)) {
+		resultDiv.innerHTML += `<p>${JSON.stringify(result)}</p>`
+	} else {
+		resultDiv.innerHTML += `<p>${result}</p>`
+	}
 }
 
 runButton.addEventListener('click', () => {
 	const selectedChallenge = challengeSelect.value
 	if (selectedChallenge && challenges[selectedChallenge]) {
-		console.clear()
+		resultDiv.innerHTML = '' // Limpiar resultados anteriores
 		challenges[selectedChallenge]()
-		resultDiv.textContent = 'Check the console for results!'
 	} else {
 		resultDiv.textContent = 'Please select a challenge.'
 	}
