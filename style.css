@@ -1,9 +1,9 @@
 :root {
 	--bg-color: #000;
 	--text-color: #fff;
-	--accent-color: #0070f3;
+	--accent-color: #e4c700;
 	--border-color: #333;
-	--hover-color: #0060df;
+	--hover-color: #cdb204;
 }
 
 body {
@@ -27,6 +27,7 @@ body {
 h1 {
 	font-size: 2.5rem;
 	margin-bottom: 2rem;
+	color: var(--accent-color);
 }
 
 #challenge-select {

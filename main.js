@@ -99,7 +99,7 @@ const challenges = {
 runButton.addEventListener('click', () => {
 	const selectedChallenge = challengeSelect.value
 	if (selectedChallenge && challenges[selectedChallenge]) {
-		console.clear() // Limpia la consola antes de cada ejecución
+		console.clear()
 		challenges[selectedChallenge]()
 		resultDiv.textContent = 'Check the console for results!'
 	} else {
