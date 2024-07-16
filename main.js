@@ -24,6 +24,7 @@ import flattenArray from './challenges/12-flattenArray/flattenArray_function.js'
 const challengeSelect = document.getElementById('challenge-select')
 const runButton = document.getElementById('run-challenge')
 const resultDiv = document.getElementById('result')
+let lastSelectedChallenge = localStorage.getItem('lastSelectedChallenge') || ''
 
 const challenges = {
 	panic: () => {
@@ -126,6 +127,14 @@ const challenges = {
 	},
 }
 
+function loadAndRunLastChallenge() {
+	if (lastSelectedChallenge && challenges[lastSelectedChallenge]) {
+		challengeSelect.value = lastSelectedChallenge
+		resultDiv.innerHTML = ''
+		challenges[lastSelectedChallenge]()
+	}
+}
+
 function logResult(result) {
 	if (Array.isArray(result)) {
 		resultDiv.innerHTML += `<p>${JSON.stringify(result)}</p>`
@@ -134,12 +143,25 @@ function logResult(result) {
 	}
 }
 
+challengeSelect.addEventListener('change', (event) => {
+	localStorage.setItem('lastSelectedChallenge', event.target.value)
+})
+
 runButton.addEventListener('click', () => {
 	const selectedChallenge = challengeSelect.value
 	if (selectedChallenge && challenges[selectedChallenge]) {
 		resultDiv.innerHTML = '' // Limpiar resultados anteriores
 		challenges[selectedChallenge]()
+		localStorage.setItem('lastSelectedChallenge', selectedChallenge)
 	} else {
 		resultDiv.textContent = 'Please select a challenge.'
 	}
 })
+
+if (import.meta.hot) {
+	import.meta.hot.accept(() => {
+		loadAndRunLastChallenge()
+	})
+}
+
+document.addEventListener('DOMContentLoaded', loadAndRunLastChallenge)
